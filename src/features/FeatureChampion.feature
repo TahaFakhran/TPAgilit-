@@ -5,7 +5,7 @@ Feature: Champion Leveling
   them levels to make the fights more interesting.
 
   Scenario: Create a Champion with a specific level
-    Given a new champion with name "Garen" and level 5
+    Given a champion with name "Garen" and level 5
     When the champion is created
     Then the champion should have name "Garen"
     And the champion should have level 5
@@ -24,7 +24,7 @@ Feature: Champion Leveling
   | champion1 | Darius | 4     |
 
   Scenario: Ensure the minimum level is 1
-    Given a new champion with name "Teemo" and level 0
+    Given a champion with name "Teemo" and level 0
     When the champion is created
     Then the champion should have level 1
 

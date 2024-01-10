@@ -5,12 +5,6 @@ import static org.junit.Assert.*;
 
 public class ChampionStepDef {
     private Champion champion;
-
-    @Given("a new champion with name {string} and level {int}")
-    public void aNewChampionWithLevel(String name, int level) {
-        champion = new Champion(name, level);
-    }
-
     @Given("a champion with name {string} and level {int}")
     public void aChampionWithLevel(String name, int level) {
         champion = new Champion(name, level);
